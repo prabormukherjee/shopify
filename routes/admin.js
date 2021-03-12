@@ -1,13 +1,18 @@
+const path = require('path');
+
 const express = require('express');
 
 const Router = express.Router();
 
+const rootDir = require('../util/path');
+
+//GET => /admin/add-product
 Router.get('/add-product', (req, res, next) => {
-    console.log('In 2nd middleware');
-    res.send('<h1>Add Product Page</h1>');
+    res.sendFile(path.join(rootDir, 'views', 'add-product.html'));
 });
 
-Router.post('/product', (req, res, next) => {
+//POST => /admin/add-product
+Router.post('/add-product', (req, res, next) => {
     console.log(req.body);
     res.redirect('/');
 });
