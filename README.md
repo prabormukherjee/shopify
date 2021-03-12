@@ -1,13 +1,11 @@
-# node101
+# node102
 
-Very basic `node.js` script with some core modules.  
+Next part of application. Added 3rd party package `express`, `body-perser`, `nodemon`  
 
 Desc:  
-`app.js` is the main driver code  
-`routes.js` is the code contains all routing logic (only 2 at this moment)  
+`app.js` is the main driver code.  
+all routes related logic is in the `routes` folder(`shop.js`, `admin.js`)  
 
 To run:  
-`node app.js`  
-or  
-install `npm` with `npm init`  
-`npm start` otherwise `npm run {customName}` (edit `package.json`)  
+`npm i` or `npm install`  
+`npm start` (edit `package.json`) or `nodemon app.js` or `node app.js`  
