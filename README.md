@@ -1,18 +1,18 @@
-# node105
+# node106
 
 Next part of application.  
 
-Added dynamic `templating engine(handlebars)` in place of `pug` the `views` folder.  
+Added dynamic `templating engine(ejs)` in place of `handlebars` the `views` folder.  
 
 + `Shop` for main `home` page  
 + `add-product` for `adding product`  
 + `404` for `Page Not Found`  
-+ `main-layout` for common parts from all pages(in `/layouts`)  
++ `head`, `end`, `navigation` for common parts from all pages(in `/includes`)  
 
 Desc:  
 `app.js` is the main driver code.  
 all `routes` related logic is in the `routes` folder(`shop.js`, `admin.js`)  
-all `handlebars` codes in the `views` folder(`404.hbs`, `add-product.hbs`, `shop.hbs`)  
+all `ejs` codes in the `views` folder(`404.ejs`, `add-product.ejs`, `shop.ejs`)  
 all `css` codes in `public/css` folder(`main.css`, `product.css`, `forms.css`)
 
 To run:  
